@@ -6,4 +6,4 @@
     prompt: "what is your name?"  
   tasks:
   - name: print welcome message
-    debug: msg="Hallo world!"
+    debug: msg="Hallo world! {{name}}"
