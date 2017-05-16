@@ -1,5 +1,6 @@
 ---
 - hosts: local
+  connection: local
   tasks:
   - name: print welcome message
     debug: msg="Hallo world!"
