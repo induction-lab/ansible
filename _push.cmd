@@ -5,4 +5,4 @@ set PATH=%PATH%;d:\PROG\GIT\bin\
 git add .
 git commit -m "-"
 git push https://github.com/induction-lab/ansible.git
-pause
+::pause
