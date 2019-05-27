@@ -1,3 +1,5 @@
+package com.company.pipeline;
+
 public class Sample {
     private int x;
     private int y;
