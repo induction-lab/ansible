@@ -1,8 +1,6 @@
 node() {
   stage("x") {
-    git init
-    def repoPath = pwd();
-    library identifier: 'local-lib@master', retriever: modernSCM([$class: 'GitSCMSource', remote: repoPath]);
+    library identifier: 'local-lib@master', retriever: legacySCM(scm);
     echo "ok"
   }
 }
