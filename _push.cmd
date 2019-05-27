@@ -1,8 +1,20 @@
 @echo off
+
+set count=1
+for /f "tokens=* usebackq" %%f in (`type .credentials`) do (
+    set line=%%f
+    set credentials!count!=!line:@=%%40!
+    set /a count=!count!+1
+)
+
+git config --global user.email "induction.lab@gmail.com"
+git config --global user.name "induction.lab"
+git config --global core.autocrlf false
+
 cd "%~dp0"
 set GIT_HOME=d:\PROG\GIT\bin\
 set PATH=%PATH%;d:\PROG\GIT\bin\
 git add .
 git commit -m "-"
-git push https://github.com/induction-lab/ansible.git
+git push https://%credentials1%:%credentials2%@github.com/induction-lab/ansible.git
 ::pause
