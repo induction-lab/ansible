@@ -1,7 +1,7 @@
 node() {
   stage("x") {
     def pipeline = libraryFromLocalRepo().com.company.pipeline;
-    def s = pipeline.Sample(5, 10);
+    def s = pipeline.Sample.new(5, 10);
   }
 }
 
