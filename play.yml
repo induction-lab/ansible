@@ -1,9 +1,14 @@
 ---
 - hosts: local
   connection: local
-  vars_prompt:
-  - name: "name"
-    prompt: "what is your name?"  
   tasks:
-  - name: print welcome message
-    debug: msg="Hallo world! {{name}}"
+  - wait_for:
+      host: "127.0.0.1"
+      port: "{{ item }}"
+      state: started
+      timeout: 0      
+    register: result
+    failed_when: no
+    with_sequence: start=65535 end=1 stride=-1
+    
+  - debug: msg="{{ hosts }}"
