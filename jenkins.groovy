@@ -1,8 +1,7 @@
 library identifier: 'local-lib@master', retriever: legacySCM(scm);
-import Sample;
+import com.company.Sample;
 node() {
   stage("x") {
-    
     echo "ok"
   }
 }
