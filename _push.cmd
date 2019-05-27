@@ -1,4 +1,5 @@
 @echo off
+setlocal enabledelayedexpansion
 
 cd "%~dp0"
 set GIT_HOME=d:\PROG\GIT\bin\
