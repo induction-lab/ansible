@@ -1,3 +1,5 @@
+import org.apache.commons.io.FilenameUtils;
+
 node() {
   stage("x") {
     def pipeline = library(identifier: 'local-lib@master', retriever: legacySCM(scm)).com.sbrf.pipeline;
