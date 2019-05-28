@@ -11,7 +11,7 @@ node() {
 
 void setup() {
     String repositoryDirectoryName = FilenameUtils.getName(System.getProperty("user.dir"))
-    String dirPath = new File( System.getProperty("user.dir") )
+    String dirPath = new File(System.getProperty("user.dir"))
             .getAbsoluteFile()
             .getParentFile()
             .getAbsolutePath()
@@ -23,3 +23,4 @@ void setup() {
                     .targetPath(dirPath)
                     .retriever(localSource(dirPath))
                     .build())
+}
