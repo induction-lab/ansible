@@ -1,4 +1,4 @@
-package com.company.pipeline;
+package com.sbrf.pipeline;
 
 public class Sample {
     private int x;
