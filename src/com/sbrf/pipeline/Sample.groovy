@@ -1,6 +1,8 @@
 package com.sbrf.pipeline;
 
-public class Sample {
+import org.apache.commons.io.FilenameUtils;
+
+public class Sample extends BasePipelineTest {
     private int x;
     private int y;
 
@@ -11,9 +13,6 @@ public class Sample {
 
     @Override
     public String toString() {
-        return "Sample{" +
-                "x=" + x +
-                ", y=" + y +
-                '}';
+        return "Sample{" + "x=" + x + ", y=" + y + "}";
     }
 }
