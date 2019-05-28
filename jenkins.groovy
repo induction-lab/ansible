@@ -14,6 +14,7 @@ pipeline {
         stage('Example') {
             steps {
                 echo 'Hello World'
+                build(this)
             }
         }
     }
