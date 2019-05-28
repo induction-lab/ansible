@@ -15,7 +15,7 @@ for /f "tokens=* usebackq" %%f in (`type .credentials`) do (
 git config --global user.email "induction.lab@gmail.com"
 git config --global user.name "induction.lab"
 git config --global core.autocrlf false
-git branch --unset-upstream
+
 git add .
 git commit -m "-"
 git push https://%credentials1%:%credentials2%@github.com/induction-lab/ansible.git
