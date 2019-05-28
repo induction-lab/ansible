@@ -7,7 +7,6 @@
 // }
 
 def core = library(identifier: 'local-lib@master', retriever: legacySCM(scm));
-import core.com.sbrf.pipeline.Sample;
 
 pipeline {
     agent any
