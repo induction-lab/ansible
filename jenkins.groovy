@@ -6,7 +6,7 @@
   // }
 // }
 
-def pipeline = library(identifier: 'local-lib@master', retriever: legacySCM(scm)).com.sbrf.pipeline;
+// def pipeline = library(identifier: 'local-lib@master', retriever: legacySCM(scm)).com.sbrf.pipeline;
 
 pipeline {
     agent any
