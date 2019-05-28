@@ -1,6 +1,7 @@
 package com.sbrf.pipeline;
 
 import org.apache.commons.io.FilenameUtils;
+import com.lesfurets.jenkins.unit.BasePipelineTest;
 
 public class Sample extends BasePipelineTest {
     private int x;
